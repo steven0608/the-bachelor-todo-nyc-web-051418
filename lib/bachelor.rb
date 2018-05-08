@@ -8,7 +8,8 @@ end
 def get_contestant_name(data, occupation)
   # code here
   data.each do |season,data|
-    if data[:occupation].include? occupation
+    data.each do |x,y|
+    if y.include? occupation
       return data["name"]
     end
   end
