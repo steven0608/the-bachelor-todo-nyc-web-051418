@@ -25,6 +25,7 @@ def count_contestants_by_hometown(data, hometown)
         collect << x["name"]
       end
     end
+  end
   collect.length
 end
 
